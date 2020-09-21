@@ -1,5 +1,24 @@
-## Welcome to GitHub Pages
+# 个人简历
 
-You can use the [editor on GitHub](https://github.com/mxtcc/mxtcc.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## ✻ 联系方式
 
-Whenever 
+* 手机号码: 18579135525
+* Email: mr_zhaojie@163.com
+* QQ: 1316826177
+
+## ✻ 基本资料
+
+* 赵杰/男/1994
+* 本科/山东交通学院
+* 工作年限: 1年以上
+* Github: [mHeartbeats](https://github.com/mHeartbeats)
+* 期望职位: Web前端/JAVA后端开发
+* 期望薪资: 面议
+* 期望城市: 南昌
+
+## ✻ 工作经历
+
+
+## ❤ 致谢
+
+感谢您花时间阅读我的简历，期待能有机会能和您成为工作的伙伴。
