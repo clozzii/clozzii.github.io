@@ -1,11 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>越努力越幸运</title>
+    <url>/2020/12/13/bad/</url>
+    <content><![CDATA[<hr>
+<blockquote class="blockquote-center">人的一切痛苦本质上都是对自己无能的愤怒</blockquote>
+ ​​​]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>越努力越幸运</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>以梦为马，不负韶华</title>
     <url>/2020/05/20/benxi/</url>
     <content><![CDATA[<hr>
 <blockquote class="blockquote-center">如果你真的愿意去努力，你人生最坏的结果，也不过是大器晚成。</blockquote>
  ​​​]]></content>
+      <categories>
+        <category>全世界最好的苏潼</category>
+      </categories>
+      <tags>
+        <tag>ytt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS选择器</title>
+    <url>/2020/12/13/css%E9%80%89%E6%8B%A9%E5%99%A8/</url>
+    <content><![CDATA[<hr>
+<p>整理了一遍css选择器</p>
+<h4 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h4><p>以#加id名来表示, id是唯一的，同一个页面里不允许多个ID相同的元素。一般只用来强调某个页面或者某个模块，多个功能相同的模块建议使用类选择器。</p>
+<h4 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h4><p>以.加上class名称来表示。</p>
+<a id="more"></a>
+
+<h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><p>直接标签名作为选择器的名称，如果使用标签选择器，那么该页面所有使用该标签的元素样式都会改变，一般不建议使用。</p>
+<h4 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h4><ul>
+<li>[attr]表示选择所有带有attr属性的标签</li>
+<li>[attr=xxx]表示用来选择有attr属性且属性值等于xxx的元素，注意属性值必须完全相等</li>
+<li>[attr|=xxx] 表示选择属性值为xxx（这里必须是相等的）或者 以xxx-属性开头的元素</li>
+<li>[attr^=xxx]表示选择以xxx属性开头的元素</li>
+<li>[attr$=xxx]表示选择以xxx属性结尾的元素</li>
+<li>[attr*=xxx]表示选择属性值中包含xxx的所有元素</li>
+</ul>
+<h4 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h4><p>通配符顾名思义，就是所有标签全部适用，把样式应用到所有元素上影响浏览器渲染效率，实际开发中不建议使用。</p>
+<h4 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h4><p>又称派生选择器，派生选择器为css2的说法。 以seletorA空格selectorB形式，表示在selectorA内部向下查找所有所有符合selectorB的元素，无论层级有多深依然会被作用。<br>后代选择器可以叠加使用，注意的是：CSS选择器是从右到左进行匹配的，嵌套的层级越深，css选择器查找的效率就越低，以及权重就过低可能会被其他的样式所覆盖。</p>
+<h5 id="css权重表："><a href="#css权重表：" class="headerlink" title="css权重表："></a>css权重表：</h5><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th align="center">用法</th>
+<th align="center">权重值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>!importan</td>
+<td align="center">放在属性值后， 如color: red !important;</td>
+<td align="center">10000</td>
+</tr>
+<tr>
+<td>内联样式</td>
+<td align="center">style=”xxx”</td>
+<td align="center">1000</td>
+</tr>
+<tr>
+<td>ID选择器</td>
+<td align="center">#box</td>
+<td align="center">100</td>
+</tr>
+<tr>
+<td>类、伪类、属性选择器</td>
+<td align="center">.box、:hover、div[class=box]</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td>标签选择器和伪元素选择器</td>
+<td align="center">p、:before</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td>通配符* 子选择器&gt; 相邻选择器+ 同胞选择器~</td>
+<td align="center">略</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<h4 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h4><p>以selectorA&gt;selectorB的形式，表示只查找指定元素的直接子元素，层级为一层。</p>
+<h4 id="相邻兄弟选择器"><a href="#相邻兄弟选择器" class="headerlink" title="相邻兄弟选择器"></a>相邻兄弟选择器</h4><p>以selectorA+selectorB的形式，表示选择紧接在指定元素后的元素，且二者有相同父元素。注意他只有一个兄弟。</p>
+<h4 id="同胞选择器"><a href="#同胞选择器" class="headerlink" title="同胞选择器"></a>同胞选择器</h4><p>以selectorA~selectorB形式，表示选择指定元素所有符合条件的所有兄弟元素， 他可能有多个兄弟。</p>
+<h4 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h4><p>以selectorA.selectorB形式，表示既符合选择器A又符合选择器B的元素</p>
+<h4 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h4><p>以seltorA,selectorB逗号分隔的形式，表示不同的选择器A和选择器B的元素都应用同一种样式。</p>
+<h4 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h4><p>以selector加:的的形式，CSS 伪类用于向某些选择器添加特殊的效果，这里只列举常见的几种：</p>
+<ul>
+<li>表示状态：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th align="center">作用</th>
+<th align="center">栗子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x:link</td>
+<td align="center">未访问的链接</td>
+<td align="center">a:link</td>
+</tr>
+<tr>
+<td>x:visited</td>
+<td align="center">已访问的链接</td>
+<td align="center">a:visited</td>
+</tr>
+<tr>
+<td>x:hover</td>
+<td align="center">鼠标移动到链接上</td>
+<td align="center">a:hover</td>
+</tr>
+<tr>
+<td>x:active</td>
+<td align="center">选定的链接</td>
+<td align="center">a:acitve</td>
+</tr>
+<tr>
+<td>x:focus</td>
+<td align="center">选定元素聚焦时的样式</td>
+<td align="center">input:focus</td>
+</tr>
+</tbody></table>
+<ul>
+<li>表示结构:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th align="center">作用</th>
+<th align="center">栗子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x:first-child</td>
+<td align="center">第一个子元素为x</td>
+<td align="center">ul li:first-child</td>
+</tr>
+<tr>
+<td>x:last-child</td>
+<td align="center">最后一个子元素为x</td>
+<td align="center">ul li:last-child</td>
+</tr>
+<tr>
+<td>x:nth-child(n)</td>
+<td align="center">第n个位置的子元素x，不分元素类型</td>
+<td align="center">ul li:nth-child(even)</td>
+</tr>
+<tr>
+<td>x:nth-last-child(n)</td>
+<td align="center">同上，倒数第n个位置的子元素x</td>
+<td align="center">ul li:nth-last-child(2)</td>
+</tr>
+<tr>
+<td>x:only-child</td>
+<td align="center">唯一子元素为x</td>
+<td align="center">a span:only-child</td>
+</tr>
+<tr>
+<td>x:only-of-type</td>
+<td align="center">唯一子元素为x, 且x没有其他同类型的兄弟元素</td>
+<td align="center">a span:only-of-type</td>
+</tr>
+</tbody></table>
+<h4 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h4><p>CSS 伪元素用于将特殊的效果添加到某些选择器，主要介绍两种比较常见的。</p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th align="center">作用</th>
+<th align="center">栗子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x::after</td>
+<td align="center">在元素x的内容前面插入新内容</td>
+<td align="center">a:after</td>
+</tr>
+<tr>
+<td>x::before</td>
+<td align="center">在元素x的内容后面插入新内容</td>
+<td align="center">a:before</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css选择器</tag>
+      </tags>
   </entry>
   <entry>
     <title>龙三Sakura和绘梨衣</title>
